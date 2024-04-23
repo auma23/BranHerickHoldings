@@ -80,8 +80,7 @@ export function BranNavbar() {
             href="#"
             className="mr-4 cursor-pointer py-1.5 font-medium underline-none"
           >
-            <img src="./src/assets/Branherick-Holdings-3-1.png" alt="" className="w-32"/>
-            Bran Herick Holdings
+            <img src="./src/assets/LogoBranherick.png" alt="" className="w-32"/>
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
