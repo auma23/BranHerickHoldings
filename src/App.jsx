@@ -1,12 +1,16 @@
 import './App.css'
 import { BranNavbar } from './Components/BranNavbar'
+import Hero from './Components/Hero'
 
 function App() {
 
   return (
-    <h1 className="text-3xl font-bold underline">
+    <>
       <BranNavbar />
-    </h1>
+      <Hero />
+    </>
+     
+    
   )
 }
 
