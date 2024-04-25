@@ -4,6 +4,7 @@ import { BranNavbar } from './Components/BranNavbar'
 import Hero from './Components/Hero'
 import Services from './Components/Services'
 import Contact from './Components/Contact'
+import Packages from './Components/Packages'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Services />
       <Contact />
+      <Packages />
     </>
      
     
