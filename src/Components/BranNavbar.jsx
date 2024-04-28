@@ -1,10 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  Navbar,
-  MobileNav,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
+import {Navbar, MobileNav, Typography, IconButton,} from "@material-tailwind/react";
  
 export function BranNavbar() {
   const [openNav, setOpenNav] = useState(false);
@@ -24,7 +19,7 @@ export function BranNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center underline-none">
+        <a href="#about" className="flex items-center underline-none">
           About Us
         </a>
       </Typography>
@@ -34,7 +29,7 @@ export function BranNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center underline-none">
+        <a href="#services" className="flex items-center underline-none">
           Services
         </a>
       </Typography>
@@ -44,8 +39,8 @@ export function BranNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center underline-none">
-          Our Portfolio
+        <a href="#packages" className="flex items-center underline-none">
+          Packages
         </a>
       </Typography>
       <Typography
@@ -54,7 +49,7 @@ export function BranNavbar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center underline-none">
+        <a href="#contact" className="flex items-center underline-none">
           Contacts
         </a>
       </Typography>
