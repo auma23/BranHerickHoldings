@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 const packagesData = [
     { name: 'Eco Tourism', description: 'Immerse yourself in the pristine beauty of East Africa.' },
@@ -11,7 +12,6 @@ const packagesData = [
     { name: 'Boating and Fishing', description: 'Set sail on Lake Victoria for boating and fishing escapades amidst breathtaking scenery.' },
     { name: 'Cultural Tours', description: 'Embark on enlightening cultural tours around the Great Lakes region, connecting with local communities and traditions.' },
     { name: 'Community Development Tours', description: 'Engage in meaningful experiences with community development tours in Western Kenya, contributing to sustainable growth.' },
-    // Add more package data here...
   ];
   
 
@@ -21,7 +21,10 @@ const PackagesCard = ({ name, description }) => (
     <p className="text-gray-700">{description}</p>
   </div>
 );
-
+PackagesCard.propTypes = { 
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 const PackageList = ({ packages }) => (
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
     {packages.map((packageItem, index) => (
@@ -29,23 +32,41 @@ const PackageList = ({ packages }) => (
     ))}
   </div>
 );
+PackageList.propTypes = {
+  packages: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 const Packages = () => {
-  const [visiblePackages, setVisiblePackages] = useState(3);
+  const [displayedPackages, setDisplayedPackages] = useState([]);
+  const visiblePackages = 3;
 
   const loadMorePackages = () => {
-    setVisiblePackages(prevVisiblePackages => prevVisiblePackages + 3);
+    const remainingPackages = packagesData.length - displayedPackages.length;
+    const randomStartIndex = Math.floor(Math.random() * remainingPackages);
+
+    const startIndex = Math.max(0, randomStartIndex); 
+
+    const endIndex = Math.min(startIndex + visiblePackages, packagesData.length);
+
+    const newDisplayedPackages = packagesData.slice(startIndex, endIndex);
+
+    setDisplayedPackages(newDisplayedPackages);
   };
 
+  useEffect(() => {
+    loadMorePackages(); 
+  }, []);
+
   return (
-    <div className="container mx-auto py-8">
+    <div className="container mx-auto py-8" id='packages'>
       <h1 className="text-3xl font-semibold mb-4">Our Packages</h1>
-      <PackageList packages={packagesData.slice(0, visiblePackages)} />
-      {visiblePackages < packagesData.length && (
+      <PackageList packages={displayedPackages} />
+      {displayedPackages.length < packagesData.length && (
         <div className="mt-4">
           <button
             className="px-4 py-2 bg-licorice text-white rounded hover:bg-harvestGold"
             onClick={loadMorePackages}
+            disabled={displayedPackages.length === packagesData.length}
           >
             Load More Packages
           </button>
