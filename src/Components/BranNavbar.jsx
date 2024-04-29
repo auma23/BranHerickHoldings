@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import {Navbar, MobileNav, Typography, IconButton,} from "@material-tailwind/react";
- 
+import logobran from "../assets/LogoBranherick.png";
+
 export function BranNavbar() {
   const [openNav, setOpenNav] = useState(false);
  
@@ -65,7 +66,6 @@ export function BranNavbar() {
       </Typography>
     </ul>
   );
- 
   return (
     <div className="-m-6 max-h-[768px] w-[calc(100%+48px)] overflow-scroll">
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 bg-licorice">
@@ -75,7 +75,7 @@ export function BranNavbar() {
             href="#"
             className="mr-4 cursor-pointer py-1.5 font-medium underline-none"
           >
-            <img src="./src/assets/LogoBranherick.png" alt="" className="w-32"/>
+           <img src={logobran} alt="" className="w-32" />
           </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
