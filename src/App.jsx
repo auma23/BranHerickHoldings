@@ -15,8 +15,8 @@ function App() {
       <Hero />
       <About />
       <Services />
-      <Contact />
       <Packages />
+      <Contact />
       <Footer />
     </>
      
