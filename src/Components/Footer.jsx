@@ -11,6 +11,7 @@ import {
   faMapMarkerAlt,
   faPhoneAlt,
 } from '@fortawesome/free-solid-svg-icons';
+import logo from "../assets/LogoBranherick.png"
 
 const Footer = () => {
   return (
@@ -39,12 +40,12 @@ const Footer = () => {
       </div>
 
       <div className="mx-6 py-10 text-center md:text-left">
-        <div className="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           
           <div>
             <h6 className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
               <span className="me-3 hover:text-primary">
-              <img src="./src/assets/LogoBranherick.png" alt="" className="w-32"/>
+              <img src={logo} alt="" className="w-auto max-w-full"/>
                 
               </span>
             </h6>
