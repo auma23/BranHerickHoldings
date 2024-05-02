@@ -41,12 +41,12 @@ FeatureCard.propTypes = {
 const Services = () => {
   const servicesData = [
     
-          { imageSrc: consult, title: "Consultation", description: "We are a full service consultation and business development group – we build strategies and systems...." },
-          { imageSrc: event, title: "Event Production", description: "Our team of well-trained and experienced international producers always deliver highly well-researched topics that addresses the real market..." },
-          { imageSrc: team, title: "Team Building", description: "Our team of well-trained and experienced international producers always deliver highly well-researched topics that addresses the real market..." },
-          { imageSrc: train, title: "Training Programs", description: "We offer a diverse range of training programs designed to enhance the skills and knowledge of your workforce...." },
-          { imageSrc: travel, title: "Tours and Travel", description: "Leveraging on both an international and local portfolio of tours and travel agents and solutions..." },
-          { imageSrc: conference, title: "Conferences and Summits", description: "Through a substantial presence in each industry and country across the continents, our conferences and summits leverage the latest..." },
+          { imageSrc: consult, title: "Consultation", description: "We are a full service consultation and business development group – we build strategies and systems." },
+          { imageSrc: event, title: "Event Production", description: "Our team of well-trained and experienced international producers always deliver highly well-researched topics that addresses the real market." },
+          { imageSrc: team, title: "Team Building", description: "Our team of well-trained and experienced international producers always deliver highly well-researched topics that addresses the real market." },
+          { imageSrc: train, title: "Training Programs", description: "We offer a diverse range of training programs designed to enhance the skills and knowledge of your workforce." },
+          { imageSrc: travel, title: "Tours and Travel", description: "Leveraging on both an international and local portfolio of tours and travel agents and solutions." },
+          { imageSrc: conference, title: "Conferences and Summits", description: "Through a substantial presence in each industry and country across the continents, our conferences and summits leverage the latest." },
       
   ];
 
