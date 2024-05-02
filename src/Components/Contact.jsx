@@ -12,7 +12,7 @@ function Contact() {
   };
 
   return (
-    <div className="max-w-screen-lg mx-auto p-5">
+    <div className="max-w-screen-lg mx-auto p-5" id='contact'>
       <div className="grid grid-cols-1 md:grid-cols-12 border">
         <div className="bg-licorice md:col-span-4 p-10 text-white">
           <p className="mt-4 text-sm leading-7 font-regular uppercase">Contact</p>
