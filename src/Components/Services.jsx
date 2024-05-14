@@ -22,7 +22,7 @@ const FeatureCard = ({ imageSrc, title, description }) => {
       <img src={imageSrc} alt={title} className="w-full h-auto transition-all duration-300 ease-in-out transform hover:scale-105" />
       {isHovered && (
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-all duration-300 ease-in-out">
-          <div className="text-center">
+          <div className="text-left ml-10 mr-8">
             <h3 className="text-white text-2xl font-bold mb-2">{title}</h3>
             <p className="text-gray-300">{description}</p>
           </div>

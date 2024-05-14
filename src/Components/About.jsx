@@ -16,8 +16,8 @@ function About() {
         <div className="max-w-lg md:order-2">
           <ReactPlayer
             url={traveling}
-            width="100%" // Set the width to 100% for responsiveness
-            height="auto" // Allow the height to adjust automatically
+            width="100%" 
+            height="auto" 
             className="rounded-md"
             controls
           />

@@ -19,7 +19,7 @@ function Packages() {
 
 function BasicPlan() {
   return (
-    <div className="w-full max-w-sm p-4 bg-licorice border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full max-w-sm p-4 bg-licorice border border-gray-200 rounded-lg shadow sm:p-8">
       <h5 className="mb-4 text-xl font-medium text-harvestGold">Basic plan</h5>
       <div className="flex items-baseline text-white">
         <span className="text-3xl font-semibold">$</span>
@@ -56,14 +56,14 @@ function BasicPlan() {
           <span className="text-base font-normal leading-tight ms-3 line-through">24×7 phone & email support</span>
         </li>
       </ul>
-      <button type="button" className="text-white bg-licorice hover:bg-harvestGold focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
+      <button type="button" className="text-white bg-licorice hover:bg-harvestGold focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
     </div>
   );
 }
 
 function StandardPlan() {
   return (
-    <div className="w-full max-w-sm p-4 bg-licorice border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full max-w-sm p-4 bg-licorice border border-gray-200 rounded-lg shadow sm:p-8">
       <h5 className="mb-4 text-xl font-medium text-harvestGold">Standard plan</h5>
       <div className="flex items-baseline text-white">
         <span className="text-3xl font-semibold">$</span>
@@ -100,14 +100,14 @@ function StandardPlan() {
           <span className="text-base font-normal leading-tight ms-3 line-through">24×7 phone & email support</span>
         </li>
       </ul>
-      <button type="button" className="text-white bg-licorice hover:bg-harvestGold focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
+      <button type="button" className="text-white bg-licorice hover:bg-harvestGold focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
     </div>
   );
 }
 
 function PremiumPlan() {
   return (
-    <div className="w-full max-w-sm p-4 bg-licorice border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-full max-w-sm p-4 bg-licorice border border-gray-200 rounded-lg shadow sm:p-8">
       <h5 className="mb-4 text-xl font-medium text-harvestGold">Premium plan</h5>
       <div className="flex items-baseline text-white">
         <span className="text-3xl font-semibold">$</span>
@@ -144,7 +144,7 @@ function PremiumPlan() {
           <span className="text-base font-normal leading-tight ms-3">24×7 phone & email support</span>
         </li>
       </ul>
-      <button type="button" className="text-white bg-licorice hover:bg-harvestGold focus:ring-4 focus:outline-none focus:ring-blue-200 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-900 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
+      <button type="button" className="text-white bg-licorice hover:bg-harvestGold focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button>
     </div>
   );
 }
